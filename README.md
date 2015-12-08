@@ -44,3 +44,5 @@ The bug I have is that watchify is continuously rebuilding :
 This bug happens when the target is named 'app.js' and the file watched 'app.jsx'. Although the two files are different files, it seems that writing 'app.js' is triggering the watch event on 'app.jsx' and rebuild. Since 'app.js' is generated again, it triggers again, etc.  
 
 If the two files are named app.jsx and app.js but in different folders, the loop is not happening.
+
+```npm run subfolder```
